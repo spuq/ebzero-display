@@ -1,0 +1,12 @@
+[Unit]
+Description=Systemd service to start my Python program
+After=multi-user.target
+
+[Service]
+User=root
+Group=root
+Type=simple
+ExecStart=/bin/bash /home/spuq/python/startup.sh
+
+[Install]
+WantedBy=multi-user.target
